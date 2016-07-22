@@ -9,7 +9,8 @@
   function RouteConfig($routeProvider, $locationProvider){
     $routeProvider
     .when('/', {
-      template: 'home'
+      templateUrl: 'html/views/home.html',
+      controller: 'HomeController'
     })
     .when('/hourly', {
       template: 'hourly'
